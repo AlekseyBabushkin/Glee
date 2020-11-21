@@ -110,10 +110,89 @@
   }
 }
 
-
-
-
-
+/* FOOTER */
+.footer {
+  color: $footer;
+  @extend %Rubik-400;
+  font-size: 14px;
+  line-height: 24px;
+  &-top{
+    display: flex;
+    border-bottom: 1px solid #dae4e9;
+    padding: 80px 0 60px;
+    &__address {
+      width: 230px;
+      margin-right: 70px;
+    }
+    &__address a {
+      display: block;
+      margin-bottom: 10px;
+      font-style: normal;
+    }
+    &__logo {
+      margin-bottom: 27px;
+    }
+    &__nav {
+      width: 270px;
+      margin-right: 30px;
+    }
+    &__item {
+      margin-bottom: 10px;
+    }
+    &__inner {
+      max-width: 270px;
+    }
+    &__title {
+      @extend %DMSans-700;
+      font-size: 16px;
+      color: #1f2044;
+      margin: 10px 0 20px;
+      text-transform: uppercase;
+    }
+    &__text {
+      line-height: 24px;
+    }
+    &__form {
+      display: flex;
+    }
+    &__form-input {
+      background-color: #fef7f0;
+      border: none;
+      margin: 0;
+      outline-color: #a3bbc8;
+      &::placeholder {
+        padding: 14px 15px;
+        @extend %DMSans-400;
+        font-size: 12px;
+        color: #234969;
+      }
+    }
+    &__form-btn {
+      border: none;
+      background-color: #a3bbc8;
+      @extend %DMSans-400;
+      line-height: 21px;
+      color: #fff;
+      padding: 9px 20px 9px 17px;
+      margin: 0;
+    }
+  }
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 33px;
+    line-height: 17px;
+    &__nav-list {
+      display: flex;
+    }
+    &__nav-item + .footer-bottom__nav-item{
+      border-left: 1px solid $footer;
+      margin-left: 15px;
+      padding-left: 15px;
+    }
+  }
+}
 
 
 
